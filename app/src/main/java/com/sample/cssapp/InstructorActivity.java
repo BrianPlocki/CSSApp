@@ -1,17 +1,41 @@
 package com.sample.cssapp;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class InstructorActivity extends ActionBarActivity {
+
+    private Button save;
+    private Button cancel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_instructor);
+
+        save = (Button) findViewById(R.id.btnSaveInstructor);
+        cancel= (Button) findViewById(R.id.btnCourseCancel);
+
+        save.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+
+            }
+        });
+
+        cancel.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Intent myIntent = new Intent(InstructorActivity.this, CourseActivity.class);
+                InstructorActivity.this.startActivity(myIntent);
+            }
+        });
     }
 
 

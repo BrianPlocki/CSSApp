@@ -1,9 +1,11 @@
 package com.sample.cssapp;
 
+import java.io.Serializable;
+
 /**
  * Created by Brandon on 4/13/2015.
  */
-public class Course {
+public class Course implements Serializable{
 
     private String mCourseId;
     private String mShortCourseDescription;
