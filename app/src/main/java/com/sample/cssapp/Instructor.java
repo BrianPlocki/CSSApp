@@ -1,28 +1,27 @@
 package com.sample.cssapp;
 
-import android.media.Image;
-
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * Created by Brandon on 4/13/2015.
  */
-public final class Instructor {
+public final class Instructor implements Serializable {
     private String mName;
     private String mTitle;
-    private Image mImage;
+    private int mImage; // the image resource id
     private String mEmail;
     private String mPhoneNumber;
     private String mOffice;
     private String mShortBio;
     private List<Course> mCourses;
 
-    public Instructor(String name, String title, Image image, String email,
+    public Instructor(String name, String title, int imageId, String email,
                       String phoneNumber, String office, String shortBio,
                       List<Course> courses) {
         mName = name;
         mTitle = title;
-        mImage = image;
+        mImage = imageId;
         mEmail = email;
         mPhoneNumber = phoneNumber;
         mOffice = office;
@@ -46,12 +45,12 @@ public final class Instructor {
         mName = name;
     }
 
-    public Image getImage() {
+    public int getImage() {
         return mImage;
     }
 
-    public void setImage(Image image) {
-        mImage = image;
+    public void setImage(int id) {
+        mImage = id;
     }
 
     public String getEmail() {
