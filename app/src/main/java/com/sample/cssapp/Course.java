@@ -20,35 +20,35 @@ public class Course implements Serializable {
         mPrerequisites = prerequisites;
     }
 
-    public String getmCourseId() {
+    public String getCourseId() {
         return mCourseId;
     }
 
-    public void setmCourseId(String mCourseId) {
+    public void setCourseId(String mCourseId) {
         this.mCourseId = mCourseId;
     }
 
-    public String getmShortCourseDescription() {
+    public String getShortCourseDescription() {
         return mShortCourseDescription;
     }
 
-    public void setmShortCourseDescription(String mShortCourseDescription) {
+    public void setShortCourseDescription(String mShortCourseDescription) {
         this.mShortCourseDescription = mShortCourseDescription;
     }
 
-    public String getmLongCourseDescription() {
+    public String getLongCourseDescription() {
         return mLongCourseDescription;
     }
 
-    public void setmLongCourseDescription(String mLongCourseDescription) {
+    public void setLongCourseDescription(String mLongCourseDescription) {
         this.mLongCourseDescription = mLongCourseDescription;
     }
 
-    public String getmPrerequisites() {
+    public String getPrerequisites() {
         return mPrerequisites;
     }
 
-    public void setmPrerequisites(String mPrerequisites) {
+    public void setPrerequisites(String mPrerequisites) {
         this.mPrerequisites = mPrerequisites;
     }
 }
